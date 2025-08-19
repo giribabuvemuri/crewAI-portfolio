@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CrewAI: Migration from Autogen to CrewAI</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <header>
@@ -34,25 +34,98 @@
     <section class="tasks">
       <h2>Project Tasks</h2>
       <ul>
-        <li><strong>Crew1:</strong> Analyze Existing Autogen Agents</li>
-        <li><strong>Crew2:</strong> Understand CrewAI Framework</li>
-        <li><strong>Crew3:</strong> Implement CrewAI Agents (Math, Telugu, Language, Career Path Workflows)</li>
-        <li><strong>Crew4:</strong> Testing & Validation</li>
-        <li><strong>Crew5:</strong> Documentation & Handoff</li>
+        <li><strong>Task1:</strong> Analyze Existing Autogen Agents</li>
+        <li><strong>Task2:</strong> Understand CrewAI Framework</li>
+        <li><strong>Task3:</strong> Implement CrewAI Agents (Math, Telugu, Language, Career Path Workflows)</li>
+        <li><strong>Task4:</strong> Testing & Validation</li>
+        <li><strong>Task5:</strong> Documentation & Handoff</li>
       </ul>
     </section>
 
     <section class="links">
       <h2>GitHub Links</h2>
       <ul>
-        <li><a href="https://github.com/giribabuvemuri/github-portfolio/commits/main" target="_blank">View Commits</a></li>
-        <li><a href="https://github.com/giribabuvemuri/github-portfolio/pulls" target="_blank">View Pull Requests</a></li>
+        <li><a href="https://github.com/Rivier-Computer-Science/Adaptive-Learning/commits?author=giribabuvemuri" target="_blank">View Commits</a></li>
+        <li><a href="https://github.com/pulls?q=is%3Apr+author%3Agiribabuvemuri+archived%3Afalse+is%3Aclosed" target="_blank">View Pull Requests</a></li>
       </ul>
     </section>
+
+    <!-- Sprint Table Link -->
+    <a href="#" class="btn" id="toggle-sprint-btn" aria-controls="sprint-table" aria-expanded="false">View Sprint Table</a>
+
+    <!-- Sprint Table Section -->
+    <table id="sprint-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Sprint</th>
+          <th>User Story ID</th>
+          <th>User Story</th>
+          <th>Task IDs</th>
+          <th>Tasks</th>
+          <th>Planned Hours</th>
+          <th>Actual Hours</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sprint-1</td>
+          <td>#401</td>
+          <td>CrewAI: Migration from Autogen to CrewAI</td>
+          <td>#431, #426</td>
+          <td>Analyze Autogen Agents, Understand CrewAI Framework, Implement CrewAI Agents</td>
+          <td>37h</td>
+          <td>15h</td>
+          <td>In Progress</td>
+        </tr>
+        <tr>
+          <td>Sprint-2</td>
+          <td>#401</td>
+          <td>CrewAI: Migration from Autogen to CrewAI</td>
+          <td>-</td>
+          <td>FSM Math & Telugu Workflow Migration (Backend + UI)</td>
+          <td>~</td>
+          <td>~</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>Sprint-3</td>
+          <td>#401</td>
+          <td>CrewAI: Migration from Autogen to CrewAI</td>
+          <td>#458, #426</td>
+          <td>Implement Agents, Math Workflow, Telugu Workflow</td>
+          <td>60h</td>
+          <td>38h</td>
+          <td>In Progress</td>
+        </tr>
+        <tr>
+          <td>Sprint-4</td>
+          <td>#401</td>
+          <td>CrewAI: Migration from Autogen to CrewAI</td>
+          <td>#426, #427, #428</td>
+          <td>Implement Agents, Testing, Documentation, All Workflows</td>
+          <td>101h</td>
+          <td>52h</td>
+          <td>Completed</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 
   <footer>
     <p>© 2025 Giri babu Vemuri | Portfolio Project</p>
   </footer>
+
+  <script>
+    const btn = document.getElementById('toggle-sprint-btn');
+    const table = document.getElementById('sprint-table');
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isHidden = table.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      btn.textContent = isHidden ? 'View Sprint Table' : 'Hide Sprint Table';
+    });
+  </script>
 </body>
 </html>
