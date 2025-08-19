@@ -1,74 +1,51 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   color: #333;
 }
 
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
 header {
-  background: #222;
-  color: white;
+  background-color: #007acc;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
 }
 
-h1, h2 {
-  margin: 10px 0;
+header .subtitle {
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
-main {
-  padding: 20px;
+h2 {
+  color: #007acc;
 }
 
-.links ul {
-  list-style: none;
-  padding: 0;
+ul {
+  list-style: disc inside;
 }
 
-.links li {
-  margin: 10px 0;
-}
-
-.links a {
+a {
+  color: #007acc;
   text-decoration: none;
-  color: #0073e6;
-  font-weight: bold;
 }
 
-.links a:hover {
+a:hover {
   text-decoration: underline;
-}
-
-/* Screenshots gallery */
-.screenshots {
-  margin-top: 20px;
-}
-
-.screenshot-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.screenshot-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 2px solid #ddd;
-  transition: transform 0.2s;
-}
-
-.screenshot-gallery img:hover {
-  transform: scale(1.05);
-  border-color: #0073e6;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
-  background: #222;
-  color: white;
+  padding: 20px 0;
+  background-color: #eee;
   margin-top: 20px;
 }
