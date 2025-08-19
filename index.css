@@ -1,4 +1,4 @@
-/* ===== Your original styles ===== */
+ /* ===== Your original styles ===== */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -27,6 +27,16 @@ header .subtitle {
   margin-top: 5px;
 }
 
+header .dev-info {
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+header .dev-info a {
+  color: #ffd700;
+  font-weight: bold;
+}
+
 h2 {
   color: #007acc;
 }
@@ -51,12 +61,11 @@ footer {
   margin-top: 20px;
 }
 
-/* ===== Additions for Sprint Table & Button ===== */
+/* ===== Button & Sprint Table ===== */
 .hidden {
   display: none;
 }
 
-/* Button */
 .btn {
   display: inline-block;
   margin: 15px 0;
@@ -71,7 +80,6 @@ footer {
   background: #005fa3;
 }
 
-/* Sprint table */
 #sprint-table {
   margin-top: 20px;
   border-collapse: collapse;
@@ -90,6 +98,29 @@ footer {
 #sprint-table th {
   background: #007acc;
   color: white;
+}
+
+/* ===== Screenshots Grid ===== */
+.screenshots {
+  margin-top: 40px;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.screenshot-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.screenshot-grid img:hover {
+  transform: scale(1.03);
 }
 
 /* Responsive tweak */
